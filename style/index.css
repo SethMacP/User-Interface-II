@@ -83,7 +83,7 @@ h1{
 }
 p{
     border: .05rem solid #2b7478;
-    color:white;
+    color: #FEFFFF;
 }
 header{
     background-color: #2B7478;
@@ -102,10 +102,6 @@ footer{
 /*Class Specific */
 .navigation a{
     margin:10px 5px;
-    border-right: .1rem solid #feffff;
-    border-left: .1rem solid #feffff;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
     color:#feffff;
     
 }
@@ -134,13 +130,21 @@ footer{
 }
 .flexFun h2{
     flex-grow: 30%;
+    margin: 1em;
+    font-size: 2em;
 }
 .flexFun a {
     flex-grow: 20%;
+    margin: 10px 35%;
+    color: #FEFFFF;
+    background-color: #2B7478;
+    border: 2px solid #FEFFFF;
+
 }
 .flexFun p {
     flex-grow: 50%;
-    
+    margin: 1em;
+    border: 0px solid black;
 }
 .portfolio{
     max-width:100%;
@@ -176,6 +180,16 @@ footer{
     flex-grow:1;
 
 }
-
+.footerMods{
+    padding: 1em;
+    line-height: 2em;
+}
+.footerMods a{
+    margin: .25em;
+    padding: 5px;
+    background-color: #3AAFA9;
+    border:.1em solid #FEFFFF;
+    color: #FEFFFF
+}
 
 /* Very Specific */
