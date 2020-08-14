@@ -72,18 +72,19 @@ body{
     font-size:1.2rem;
     max-width:800;
     width:800;
-    font-family: Railway, Arial, Helvetica, sans-serif;
+    font-family: 'Railway', Arial, Helvetica, sans-serif;
     text-align: center;
 }
 h1{
     font-size: 4rem;
     color:#FEFFFF;
     text-shadow: 4px 8px 5px rgba(43, 116, 120, 1);
-    font-family: 'Poiret One', Arial, Helvetica, sans-serif;
+    font-family: 'Annie Use Your Telescope', Arial, Helvetica, sans-serif;
 }
 p{
     border: .05rem solid #2b7478;
     color: #FEFFFF;
+    font-family: 'Poiret One', Arial, Helvetica, sans-serif
 }
 header{
     background-color: #2B7478;
@@ -103,7 +104,6 @@ footer{
 .navigation a{
     margin:10px 5px;
     color:#feffff;
-    
 }
 .mainSection{
     width: 100%;
@@ -139,6 +139,8 @@ footer{
     color: #FEFFFF;
     background-color: #2B7478;
     border: 2px solid #FEFFFF;
+    padding: 15px 0px;
+    font-size: 1.1em;
 
 }
 .flexFun p {
