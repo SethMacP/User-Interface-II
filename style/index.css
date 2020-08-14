@@ -66,9 +66,8 @@ a:active {
 
 
 /* Element specific CSS*/
-* {
-    /*other font option: Cinzel*/
-}
+/*other font option: Cinzel*/
+
 body{
     font-size:1.2rem;
     max-width:800;
@@ -83,7 +82,7 @@ h1{
     font-family: 'Poiret One', Arial, Helvetica, sans-serif;
 }
 p{
-    background-color: black;
+    border: .05rem solid #2b7478;
     color:white;
 }
 header{
@@ -94,6 +93,10 @@ header{
 }
 main{
     background-color: #3AAFA9;
+}
+footer{
+    background-color: #2B7478;
+    margin: 0px auto;
 }
 
 /*Class Specific */
@@ -125,23 +128,52 @@ main{
    height:400px;
 
 }
-
+.flexFun{
+    display:flex;
+    flex-direction: column;
+}
+.flexFun h2{
+    flex-grow: 30%;
+}
+.flexFun a {
+    flex-grow: 20%;
+}
+.flexFun p {
+    flex-grow: 50%;
+    
+}
 .portfolio{
     max-width:100%;
-    width: 80%;
-    display:flex;
-    flex-flow: row wrap;
-    margin: 10px auto;
+    width: 50%;
+    /* display:flex;
+    flex-flow: row wrap; */
+    margin: 0px auto;
+    margin-bottom: 10px auto;
     background-color: #3AAFA9;
     border-top: 2px solid #2B7478;
 }
+.portfolio div img{
+    flex-grow: 1;
+    margin: 10px auto;
+    padding: 10px;
+}
+.portfolio div p{
+    flex-grow: 1;
+    margin: 10px auto;
+    padding: 10px;
+}
+
 .containerImages{
     display:flex;
     flex-direction: row;
+    flex-grow: 1;
+    
+
 }
 .containerDescriptions{
     display:flex;
     flex-direction:row;
+    flex-grow:1;
 
 }
 
