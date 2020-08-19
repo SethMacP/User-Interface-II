@@ -62,6 +62,13 @@ a:active {
 #3AAFA9 (lighter green)
 #DEF2F1 (lightest green)
 #FEFFFF (eggshell)
+
+Tryout:
+#687864 - GREENISH
+#31708E - DARKEST BLUE
+#5085A5 - MEDIUM BLUE
+#8FC1E3 - LIGHT BLUE
+#F7F9FB - WHITE
 */
 
 
@@ -82,21 +89,21 @@ h1{
     font-family: 'Annie Use Your Telescope', Arial, Helvetica, sans-serif;
 }
 p{
-    border: .05rem solid #2b7478;
-    color: #FEFFFF;
+
+    color: #F7F9FB;
     font-family: 'Poiret One', Arial, Helvetica, sans-serif
 }
 header{
-    background-color: #2B7478;
-    color:#FEFFFF;
+    background-color: #31708E;
+    color:#F7F9FB;
     margin:0px auto;
     padding:5px;
 }
 main{
-    background-color: #3AAFA9;
+    background-color: #31708E;
 }
 footer{
-    background-color: #2B7478;
+    background-color: #5085A5;
     margin: 0px auto;
 }
 
@@ -107,7 +114,7 @@ footer{
 }
 .mainSection{
     width: 100%;
-    background-color: #3AAFA9;
+    background-color: #5085A5;
 }
 .mainImage{
     max-width:45%;
@@ -121,7 +128,7 @@ footer{
     width: 45%;
     margin: 10px auto;
     vertical-align: middle;
-   height:400px;
+ 
 
 }
 .flexFun{
@@ -138,7 +145,7 @@ footer{
     flex-grow: 20%;
     margin: 10px 35%;
     color: #FEFFFF;
-    background-color: #2B7478;
+    background-color: #31708E;
     border: 2px solid #FEFFFF;
     padding: 15px 0px;
     font-size: 1.1em;
@@ -156,8 +163,8 @@ footer{
     flex-flow: row wrap; */
     margin: 0px auto;
     margin-bottom: 10px auto;
-    background-color: #3AAFA9;
-    border-top: 2px solid #2B7478;
+    background-color: #31708E;
+    border-top: 2px solid #31708E;
 }
 .portfolio div img{
     flex-grow: 1;
@@ -186,13 +193,59 @@ footer{
 .footerMods{
     padding: 1em;
     line-height: 2em;
+    margin: 0px auto;
 }
 .footerMods a{
-    margin: .25em;
-    padding: 5px;
-    background-color: #3AAFA9;
+    margin: .5em;
+    padding: 12px;
+    background-color: #8590AA;
     border:.1em solid #FEFFFF;
     color: #FEFFFF
 }
 
-/* Very Specific */
+/* MEDIA QUERIES*/
+/* Build for max 800/500 */
+
+@media (max-width: 800px) {
+     /* Headline & Navigation */
+    .navigation{
+        min-width: 33%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    .navigation a {
+        background-color: #8590AA;
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: middle;
+        margin: 1px 10px;
+        padding: 5px;
+    }
+       /* mainSection (IMG, Name, Info) */
+    .mainSection {
+        display:flex;
+        flex-flow: column wrap;
+
+    }
+    .mainImage {
+        display:block;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .mainInfo{
+        display:flex;
+        max-width: 80%;
+    }
+    h2{
+        flex-wrap: nowrap;
+    }
+    .projectLink {
+        min-width: 33%;
+    }
+}
+       
+    
+
+
