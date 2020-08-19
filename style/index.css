@@ -127,6 +127,7 @@ footer{
 .flexFun{
     display:flex;
     flex-direction: column;
+    align-items: center;
 }
 .flexFun h2{
     flex-grow: 30%;
