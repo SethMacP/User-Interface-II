@@ -125,7 +125,7 @@ footer{
 .mainInfo{
     max-width:50%;
     display:inline-block;
-    width: 45%;
+    width: 50%;
     margin: 10px auto;
     vertical-align: middle;
  
@@ -232,6 +232,7 @@ footer{
     h2{
         flex-wrap: nowrap;
     }
+    /* Portfolio Items */
     .portfolio {
         flex-direction: column wrap;
         align-content: center;
@@ -240,7 +241,15 @@ footer{
     .containerImages {
         flex-flow: row wrap;
     }
+}
+/* End of 800px Media Styles */
 
+/* Start of 500px Media Styles */
+
+@media (max-width: 500px){
+.mainInfo{
+    max-width: 100%;
+}
 }
       
        
