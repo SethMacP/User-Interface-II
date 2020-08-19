@@ -249,6 +249,10 @@ footer{
 @media (max-width: 500px){
 .mainInfo{
     max-width: 100%;
+
+}
+.lowPriority {
+    display:none;
 }
 }
       
