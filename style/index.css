@@ -91,7 +91,7 @@ h1{
 p{
 
     color: #F7F9FB;
-    font-family: 'Poiret One', Arial, Helvetica, sans-serif
+    font-family: 'Poiret One', Arial, Helvetica, sans-serif;
 }
 header{
     background-color: #31708E;
@@ -113,14 +113,16 @@ footer{
     color:#feffff;
 }
 .mainSection{
-    width: 1000;
+    width: 100%;
     background-color: #5085A5;
+
 }
 .mainImage{
     max-width:45%;
     display:inline-block;
     margin:10px;
     vertical-align: middle;
+    border-radius: 10%;
 }
 .mainInfo{
     max-width:50%;
@@ -146,8 +148,8 @@ footer{
     margin: 10px 35%;
     color: #FEFFFF;
     background-color: #31708E;
-    border: 2px solid #FEFFFF;
-    padding: 15px 0px;
+    border: 1px solid #FEFFFF;
+    padding: 15px 25px;
     font-size: 1.1em;
 
 }
@@ -157,7 +159,7 @@ footer{
     border: 0px solid black;
 }
 .portfolio{
-    width: 1000px;
+    width: 100%;
     display:flex;
     flex-flow: row wrap;
     justify-items: center;
@@ -167,15 +169,18 @@ footer{
     margin: 0 auto;
     }
 .portfolio div img{
-    flex-grow: 1;
     margin: 10px auto;
     padding: 10px;
 }
 .portfolio div p{
-    flex-grow: 1;
     margin: 10px auto;
     padding: 10px;
 }
+.projectContainer {
+    min-width: 25%;
+}
+
+
 
 
 .footerMods{
@@ -194,6 +199,18 @@ footer{
     color: #FEFFFF
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES*/
 /* Build for max 800/500 */
 
@@ -206,7 +223,7 @@ footer{
         flex-flow: column wrap;
     }
     .navigation a {
-        background-color: #8590AA;
+        background-color: #8FC1E3;
         display:flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -218,6 +235,7 @@ footer{
     .mainSection {
         display:flex;
         flex-flow: column wrap;
+        background-color: #5085A5;
 
     }
     .mainImage {
@@ -237,9 +255,17 @@ footer{
         flex-direction: column wrap;
         align-content: center;
         width: 80%;
+
     }
-    .containerImages {
-        flex-flow: row wrap;
+    .projectContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 45%;
+    }
+    .projectContainerLP {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 45%;
     }
 }
 /* End of 800px Media Styles */
@@ -249,11 +275,8 @@ footer{
 @media (max-width: 500px){
 .mainInfo{
     max-width: 100%;
+}
 
-}
-.lowPriority {
-    display:none;
-}
 }
       
        
