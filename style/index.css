@@ -1,1 +1,285 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**********************/
+/*Styling Begins Here */
+/**********************/
+/*Add this in later to make the active page stand out somehow
+a:active {
+
+}*/
+
+/* Color Scheme 
+#17252A(black)
+#2B7478(darkest green) rgba(43, 116, 120, 1)
+#3AAFA9 (lighter green)
+#DEF2F1 (lightest green)
+#FEFFFF (eggshell)
+
+Tryout:
+#687864 - GREENISH
+#31708E - DARKEST BLUE
+#5085A5 - MEDIUM BLUE
+#8FC1E3 - LIGHT BLUE
+#F7F9FB - WHITE
+*/
+
+
+/* Element specific CSS*/
+/*other font option: Cinzel*/
+
+body{
+    font-size:1.2rem;
+    max-width:800;
+    width:800;
+    font-family: 'Railway', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+    color:#FEFFFF;
+    text-shadow: 4px 8px 5px rgba(43, 116, 120, 1);
+    font-family: 'Annie Use Your Telescope', Arial, Helvetica, sans-serif;
+}
+p{
+
+    color: #F7F9FB;
+    font-family: 'Poiret One', Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #31708E;
+    color:#F7F9FB;
+    margin:0px auto;
+    padding:5px;
+}
+main{
+    background-color: #31708E;
+}
+footer{
+    background-color: #5085A5;
+    margin: 0px auto;
+}
+
+/*Class Specific */
+.navigation a{
+    margin:10px 5px;
+    color:#feffff;
+}
+.mainSection{
+    width: 100%;
+    background-color: #5085A5;
+
+}
+.mainImage{
+    max-width:45%;
+    display:inline-block;
+    margin:10px;
+    vertical-align: middle;
+    border-radius: 10%;
+}
+.mainInfo{
+    max-width:50%;
+    display:inline-block;
+    width: 50%;
+    margin: 10px auto;
+    vertical-align: middle;
+ 
+
+}
+.flexFun{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flexFun h2{
+    flex-grow: 30%;
+    margin: 1em;
+    font-size: 2em;
+}
+.flexFun a {
+    flex-grow: 20%;
+    margin: 10px 35%;
+    color: #FEFFFF;
+    background-color: #31708E;
+    border: 1px solid #FEFFFF;
+    padding: 15px 25px;
+    font-size: 1.1em;
+
+}
+.flexFun p {
+    flex-grow: 50%;
+    margin: 1em;
+    border: 0px solid black;
+}
+.portfolio{
+    width: 100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: center;
+    align-content: space-around;
+    background-color: #31708E;
+    margin: 0 auto;
+    }
+.portfolio div img{
+    margin: 10px auto;
+    padding: 10px;
+}
+.portfolio div p{
+    margin: 10px auto;
+    padding: 10px;
+}
+.projectContainer {
+    min-width: 25%;
+}
+
+
+
+
+.footerMods{
+    padding: 1em;
+    line-height: 2em;
+    margin: 0px auto;
+}
+.footerMods p{
+    padding: 10px 10px
+}
+.footerMods a{
+    margin: .5em;
+    padding: 15px;
+    background-color: #8590AA;
+    border:.1em solid #FEFFFF;
+    color: #FEFFFF
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES*/
+/* Build for max 800/500 */
+
+@media (max-width: 800px) {
+     /* Headline & Navigation */
+    .navigation{
+        min-width: 33%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    .navigation a {
+        background-color: #8FC1E3;
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: middle;
+        margin: 1px 10px;
+        padding: 5px;
+    }
+       /* mainSection (IMG, Name, Info) */
+    .mainSection {
+        display:flex;
+        flex-flow: column wrap;
+        background-color: #5085A5;
+
+    }
+    .mainImage {
+        display:block;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .mainInfo{
+        display:flex;
+        max-width: 80%;
+    }
+    h2{
+        flex-wrap: nowrap;
+    }
+    /* Portfolio Items */
+    .portfolio {
+        flex-direction: column wrap;
+        align-content: center;
+        width: 80%;
+
+    }
+    .projectContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 45%;
+    }
+    .projectContainerLP {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 45%;
+    }
+}
+/* End of 800px Media Styles */
+
+/* Start of 500px Media Styles */
+
+@media (max-width: 500px){
+.mainInfo{
+    max-width: 100%;
+}
+
+}
+      
+       
+    
+
+
